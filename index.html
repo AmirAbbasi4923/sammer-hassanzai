@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sameer Hassan Zai Gym — Premier fitness center in Karachi offering world-class training, certified coaches, and separate male & female gym facilities." />
+  <meta name="keywords"
+    content="gym, fitness, Karachi, bodybuilding, weight training, personal trainer, Sameer Hassan Zai" />
+  <title>Sameer Hassan Zai Gym</title>
+  <link rel="icon" type="image/jpeg" href="gym_logo.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- EmailJS Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("q9DMctBBAq9RoqV0d");
+    })();
+  </script>
+</head>
+
+<body style="overflow: hidden;">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-logo">Sameer Hassan <span>Zai Gym</span></div>
+    <div class="loader-bar">
+      <div class="loader-bar-inner"></div>
+    </div>
+  </div>
+
+  <!-- Nav Overlay (mobile) -->
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo" style="display: flex; align-items: center; gap: 10px;">
+        <img src="gym_logo.jpeg" alt="Sameer Hassan Zai Gym Logo" style="height: 50px; width: auto;" />
+        <div style="font-size: 1.2rem; font-weight: bold; color: var(--clr-white);">Sameer Hassan <span>Zai Gym</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#bmi">BMI</a></li>
+        <li><a href="#our-champions">Champions</a></li>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Light/Dark Mode">
+          <span class="theme-icon-dark">🌙</span>
+          <span class="theme-icon-light">☀️</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🏋️ Premium Fitness Center</div>
+      <h1>Sameer Hassan<span>Zai Gym</span></h1>
+      <p class="hero-tagline">The strong believer is better and more beloved to Allah than the weak believer, though
+        there is good in both.</p>
+      <a href="#register" class="hero-cta">
+        Register Now
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== STATS ==================== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="120" data-suffix="+">0</div>
+          <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="2" data-suffix="">0</div>
+          <div class="stat-label">Coaches</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="10" data-suffix="+">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="10" data-suffix="+">0</div>
+          <div class="stat-label">Competitions Won</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>About Us</h2>
+        <p>Built on discipline, driven by passion, and dedicated to transforming lives through fitness.</p>
+      </div>
+      <div class="about-content">
+        <div class="about-image about-image--video fade-in-left">
+          <div class="about-video">
+            <iframe src="https://www.youtube.com/embed/Sc7LUjbKBHw?autoplay=1&mute=1&controls=1&playsinline=1&rel=0"
+              title="Sameer Hassan Zai Gym — About Us"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+        <div class="about-text fade-in-right">
+          <h3>Why Sameer Hassan Zai?</h3>
+          <p>Born in the heart of Musharraf Colony, Sameer Hassan Zai Gym stands as the oldest and most trusted gym in
+            Karachi — a landmark where athletes, beginners, and champions all call home. Our state-of-the-art equipment
+            and expert coaching are designed with one purpose — to transform you.</p>
+          <p>We believe true fitness goes beyond the weights. It lives in the food you eat, the mindset you carry, and the
+            community beside you. That is why we offer nutrition guidance, build mental toughness, and foster a
+            brotherhood that keeps you coming back stronger every single day.</p>
+          <p>This is not just a gym. This is where Karachi's fitness story began.</p>
+          <div class="about-values">
+            <div class="about-value">
+              <span class="about-value-icon">💪</span>
+              <span>Elite Training</span>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🎯</span>
+              <span>Goal-Focused</span>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🤝</span>
+              <span>Community</span>
+            </div>
+            <div class="about-value">
+              <span class="about-value-icon">🏆</span>
+              <span>Championship DNA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FACILITIES ==================== -->
+  <section class="section section-alt" id="facilities">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Our Facilities</h2>
+        <p>Everything you need under one roof — premium equipment, pristine environment, and total comfort.</p>
+      </div>
+      <div class="facilities-grid">
+        <div class="facility-card fade-in">
+          <span class="facility-icon">🏃</span>
+          <h3>Cardio Zone</h3>
+          <p>Latest treadmills, ellipticals, and stationary bikes for optimal cardiovascular training sessions.</p>
+        </div>
+        <div class="facility-card fade-in">
+          <span class="facility-icon">🏋️</span>
+          <h3>Weight Training</h3>
+          <p>Full range of free weights, dumbbells, barbells, and plate-loaded machines for serious lifters.</p>
+        </div>
+        <div class="facility-card fade-in">
+          <span class="facility-icon">👩</span>
+          <h3>Female Only Area – Designated Time for Females</h3>
+          <p>Private, fully equipped training space exclusively for women — comfortable and empowering.</p>
+        </div>
+        <div class="facility-card fade-in">
+          <span class="facility-icon">🅿️</span>
+          <h3>Parking</h3>
+          <p>Spacious and secure parking area available for all members at no extra charge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEMALE GYM ==================== -->
+  <section class="section female-section" id="female-gym">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Female Gym</h2>
+        <p>A dedicated, private space designed exclusively for women to train with confidence and comfort.</p>
+      </div>
+      <div class="female-content">
+        <div class="female-info fade-in-left">
+          <h3>Empowering Women Through Fitness</h3>
+          <p>Our female gym section offers complete privacy with dedicated staff, separate timings, and a welcoming
+            environment. We understand the importance of comfort and modesty, which is why we've created a space where
+            women can focus entirely on their fitness goals.</p>
+          <p>From weight training to cardio, yoga to functional fitness — our female section is fully equipped with
+            everything you need to succeed.</p>
+          <div class="female-features">
+            <div class="female-feature">
+              <span class="female-feature-icon">🔒</span>
+              <span>Complete Privacy</span>
+            </div>
+            <div class="female-feature">
+              <span class="female-feature-icon">👩‍🏫</span>
+              <span>Female Trainers</span>
+            </div>
+            <div class="female-feature">
+              <span class="female-feature-icon">🧘</span>
+              <span>Yoga & Flexibility</span>
+            </div>
+            <div class="female-feature">
+              <span class="female-feature-icon">💪</span>
+              <span>Full Equipment</span>
+            </div>
+            <div class="female-feature">
+              <span class="female-feature-icon">🕐</span>
+              <span>Dedicated Hours</span>
+            </div>
+          </div>
+        </div>
+        <div class="female-image-area fade-in-right">
+          <img src="women.png" alt="Empowering Women Through Fitness"
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px; display: block;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRAINERS ==================== -->
+  <section class="section section-alt" id="trainers">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Our Trainers</h2>
+        <p>Meet the certified professionals who will guide you to your fitness goals with expertise and passion.</p>
+      </div>
+      <div class="trainers-grid">
+        <!-- Trainer 1 -->
+        <div class="trainer-card fade-in">
+          <div class="trainer-photo trainer-photo--img">
+            <img src="amir_coach.jpeg" alt="Coach Aamir Hassan Zai" loading="lazy" />
+          </div>
+          <div class="trainer-info">
+            <h3>Coach Aamir Hassan Zai</h3>
+            <p class="trainer-specialization">Head Coach</p>
+            <p class="trainer-experience">⭐ 10+ Years Experience</p>
+            <p class="trainer-bio">Expert in bodybuilding, weight training, and fitness transformations. Trainer of our
+              championship athletes.</p>
+          </div>
+        </div>
+        <!-- Trainer 2 -->
+        <div class="trainer-card fade-in">
+          <div class="trainer-photo trainer-photo--img">
+            <img src="women_coach.jpeg" alt="Women Coach" loading="lazy" />
+          </div>
+          <div class="trainer-info">
+            <h3>Women Coach</h3>
+            <p class="trainer-specialization">Female Gym Coach</p>
+            <p class="trainer-experience">⭐ 3+ Years Experience</p>
+            <p class="trainer-bio">Dedicated coach for the women's gym — safe, focused training for female members.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRICING ==================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Packages & Pricing</h2>
+        <p>Flexible plans designed to fit your goals and budget. Choose the package that works best for you.</p>
+      </div>
+
+      <!-- Pricing Grid -->
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <div class="pricing-duration">Monthly</div>
+          <div class="pricing-amount"><span class="currency">Rs.</span> 1,500</div>
+          <div class="pricing-period">per month</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> Standard Membership</li>
+          </ul>
+          <button class="pricing-btn"
+            onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Get Started</button>
+        </div>
+        <div class="pricing-card fade-in">
+          <div class="pricing-duration">Monthly + Coach</div>
+          <div class="pricing-amount"><span class="currency">Rs.</span> 5,000</div>
+          <div class="pricing-period">per month</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> Personal Coaching</li>
+          </ul>
+          <button class="pricing-btn"
+            onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Get Started</button>
+        </div>
+        <div class="pricing-card popular fade-in">
+          <div class="popular-badge">🔥 Most Popular</div>
+          <div class="pricing-duration">6 Months</div>
+          <div class="pricing-amount"><span class="currency">Rs.</span> 8,500</div>
+          <div class="pricing-period">for 6 months</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> Cost Effective</li>
+          </ul>
+          <button class="pricing-btn"
+            onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Get Started</button>
+        </div>
+        <div class="pricing-card fade-in">
+          <div class="pricing-duration">Annual</div>
+          <div class="pricing-amount"><span class="currency">Rs.</span> 17,500</div>
+          <div class="pricing-period">for 1 year</div>
+          <ul class="pricing-features">
+            <li><span class="check">✓</span> Full Gym Access</li>
+            <li><span class="check">✓</span> Best Value</li>
+          </ul>
+          <button class="pricing-btn"
+            onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TIMINGS ==================== -->
+  <section class="section section-alt" id="timings">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Gym Timings</h2>
+        <p>Separate training hours for boys and girls. Plan your sessions accordingly.</p>
+      </div>
+      <div class="timings-grid" style="display: flex; justify-content: center;">
+        <div class="timing-card fade-in" style="width: 100%; max-width: 600px;">
+          <div class="timing-card-header">
+            <div class="timing-icon">⏱️</div>
+            <h3>Gym Schedule</h3>
+          </div>
+
+          <!-- Timing Tabs -->
+          <div class="timing-tabs" style="display: flex; border-bottom: 1px solid #ddd; margin-bottom: 15px;">
+            <button class="timing-tab active" data-target="timing-men"
+              style="flex: 1; padding: 15px; background: none; border: none; cursor: pointer; font-size: 1.1rem; font-weight: bold; border-bottom: 3px solid var(--primary-color);">🚹
+              Men</button>
+            <button class="timing-tab" data-target="timing-women"
+              style="flex: 1; padding: 15px; background: none; border: none; cursor: pointer; font-size: 1.1rem; font-weight: bold; border-bottom: 3px solid transparent; color: #777;">🚺
+              Women</button>
+          </div>
+
+          <div class="timing-table">
+
+            <!-- Men's Schedule -->
+            <div id="timing-men" class="timing-panel" style="display: block; animation: fadeIn 0.4s;">
+              <h4
+                style="margin-top: 15px; margin-bottom: 10px; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                Mon - Sat</h4>
+              <div class="timing-row">
+                <span class="timing-day">Morning</span>
+                <span class="timing-time">6:30 AM – 9:00 AM</span>
+              </div>
+              <div class="timing-row">
+                <span class="timing-day">Evening</span>
+                <span class="timing-time">5:30 PM – 1:00 AM</span>
+              </div>
+              <h4
+                style="margin-top: 25px; margin-bottom: 10px; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                📅 Sunday</h4>
+              <div class="timing-row">
+                <span class="timing-day">All Members</span>
+                <span class="timing-time" style="color: #e74c3c; font-weight: bold;">CLOSED</span>
+              </div>
+            </div>
+
+            <!-- Women's Schedule -->
+            <div id="timing-women" class="timing-panel" style="display: none; animation: fadeIn 0.4s;">
+              <h4
+                style="margin-top: 15px; margin-bottom: 10px; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                Mon - Sat</h4>
+              <div class="timing-row">
+                <span class="timing-day">Day Shift</span>
+                <span class="timing-time">11:00 AM – 3:00 PM</span>
+              </div>
+              <h4
+                style="margin-top: 25px; margin-bottom: 10px; color: var(--text-color); display: flex; align-items: center; gap: 8px;">
+                📅 Sunday</h4>
+              <div class="timing-row">
+                <span class="timing-day">All Members</span>
+                <span class="timing-time" style="color: #e74c3c; font-weight: bold;">CLOSED</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BMI CALCULATOR ==================== -->
+  <section class="section" id="bmi">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>BMI Calculator</h2>
+        <p>Check your Body Mass Index instantly and get personalized health insights.</p>
+      </div>
+      <div class="bmi-content fade-in">
+        <div class="bmi-card">
+          <form id="bmi-form" class="bmi-form">
+            <div class="bmi-input-group">
+              <label for="bmi-height">Height (cm)</label>
+              <input type="number" id="bmi-height" placeholder="e.g. 175" min="50" max="300" required />
+            </div>
+            <div class="bmi-input-group">
+              <label for="bmi-weight">Weight (kg)</label>
+              <input type="number" id="bmi-weight" placeholder="e.g. 75" min="10" max="500" required />
+            </div>
+            <button type="submit" class="bmi-calculate-btn">Calculate BMI</button>
+          </form>
+          <div class="bmi-result" id="bmi-result">
+            <div class="bmi-value" id="bmi-value">0</div>
+            <div class="bmi-category" id="bmi-category">—</div>
+            <p class="bmi-tip" id="bmi-tip"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OUR CHAMPIONS ==================== -->
+  <section class="our-champions-section" id="our-champions">
+    <div class="container">
+      <header class="our-champions-header fade-in">
+        <h2 class="our-champions-title">Our Champions 🏆</h2>
+        <div class="our-champions-divider" aria-hidden="true"></div>
+        <p class="our-champions-subtext">These champions are trained by <strong>Coach Aamir Hassan Zai</strong></p>
+      </header>
+
+      <div class="champions-grid">
+        <!-- Tahir -->
+        <article class="champion-card fade-in" data-champion-carousel>
+          <h3 class="champion-name">Tahir</h3>
+          <div class="champion-competitions">
+            <p class="champion-competition">Classic Physique — Nazimabad</p>
+            <p class="champion-competition">Model Physique — Karachi West</p>
+          </div>
+          <div class="champion-position medal-gold">
+            <span class="medal-icon" aria-hidden="true">🥇</span>
+            <span class="position-text">1st Place — All Competitions</span>
+          </div>
+          <div class="champion-carousel" aria-label="Tahir photo gallery">
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="tahir1.jpeg" alt="Tahir at competition — photo 1" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="tahir2.jpeg" class="carousel-img-contain" alt="Tahir at competition — photo 2" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="tahir3.jpeg" alt="Tahir at competition — photo 3" loading="lazy" />
+                </div>
+              </div>
+              <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photo">&#10094;</button>
+              <button type="button" class="carousel-btn carousel-next" aria-label="Next photo">&#10095;</button>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="Photo navigation"></div>
+          </div>
+        </article>
+
+        <!-- Arif -->
+        <article class="champion-card fade-in" data-champion-carousel>
+          <h3 class="champion-name">Arif</h3>
+          <div class="champion-competitions">
+            <p class="champion-competition">Karachi West</p>
+            <p class="champion-competition">Junior Competition</p>
+          </div>
+          <div class="champion-position medal-gold">
+            <span class="medal-icon" aria-hidden="true">🥇</span>
+            <span class="position-text">1st Place</span>
+          </div>
+          <div class="champion-carousel" aria-label="Arif photo gallery">
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="arif1.jpeg" class="carousel-img-contain" alt="Arif at competition — photo 1" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="arif2.jpeg" class="carousel-img-contain" alt="Arif at competition — photo 2" loading="lazy" />
+                </div>
+              </div>
+              <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photo">&#10094;</button>
+              <button type="button" class="carousel-btn carousel-next" aria-label="Next photo">&#10095;</button>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="Photo navigation"></div>
+          </div>
+        </article>
+
+        <!-- Usama -->
+        <article class="champion-card fade-in" data-champion-carousel>
+          <h3 class="champion-name">Usama</h3>
+          <div class="champion-competitions">
+            <p class="champion-competition">Karachi South</p>
+            <p class="champion-competition">Open South Mr Junior</p>
+          </div>
+          <div class="champion-position medal-gold">
+            <span class="medal-icon" aria-hidden="true">🥇</span>
+            <span class="position-text">1st Place</span>
+          </div>
+          <div class="champion-carousel" aria-label="Usama photo gallery">
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="usama1.jpeg" class="carousel-img-contain" alt="Usama at competition — photo 1" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="usama2.jpeg" class="carousel-img-contain" alt="Usama at competition — photo 2" loading="lazy" />
+                </div>
+                <div class="carousel-slide">
+                  <img src="usama3.jpeg" alt="Usama at competition — photo 3" loading="lazy" />
+                </div>
+              </div>
+              <button type="button" class="carousel-btn carousel-prev" aria-label="Previous photo">&#10094;</button>
+              <button type="button" class="carousel-btn carousel-next" aria-label="Next photo">&#10095;</button>
+            </div>
+            <div class="carousel-dots" role="tablist" aria-label="Photo navigation"></div>
+          </div>
+        </article>
+
+        <!-- Junaid -->
+        <article class="champion-card fade-in" data-champion-carousel>
+          <h3 class="champion-name">Junaid</h3>
+          <div class="champion-competitions">
+            <p class="champion-competition">Junior Karachi</p>
+          </div>
+          <div class="champion-position medal-gold">
+            <span class="medal-icon" aria-hidden="true">🥇</span>
+            <span class="position-text">1st Place</span>
+          </div>
+          <div class="champion-carousel champion-carousel--single" aria-label="Junaid photo">
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <div class="carousel-slide">
+                  <img src="junaid1.jpeg" class="carousel-img-contain" alt="Junaid at competition"
+                    data-auto-retry loading="lazy" />
+                </div>
+              </div>
+            </div>
+            <p class="carousel-photo-placeholder" aria-live="polite">Add <strong>junaid1.jpeg</strong> to the gym folder — it will appear here automatically.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== REGISTRATION ==================== -->
+  <section class="section" id="register">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Register Now</h2>
+        <p>Take the first step towards a stronger you. Fill out the form below and our team will contact you.</p>
+      </div>
+      <div class="registration-content fade-in">
+        <form class="reg-form" id="reg-form">
+          <div class="form-group">
+            <label for="reg-name">Full Name</label>
+            <input type="text" id="reg-name" placeholder="Enter your full name" />
+            <p class="form-error" id="reg-name-error">Please enter at least 3 characters.</p>
+          </div>
+          <div class="form-group">
+            <label for="reg-phone">Phone Number</label>
+            <input type="tel" id="reg-phone" placeholder="e.g. 03152419624" maxlength="11" minlength="11"
+              pattern="\d{11}" required />
+            <p class="form-error" id="reg-phone-error">Please enter exactly 11 numbers.</p>
+          </div>
+          <div class="form-group">
+            <label>Gender</label>
+            <div class="form-radio-group">
+              <label class="radio-option">
+                <input type="radio" name="gender" value="male" />
+                <span>Male</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="female" />
+                <span>Female</span>
+              </label>
+            </div>
+            <p class="form-error" id="reg-gender-error">Please select your gender.</p>
+          </div>
+          <div class="form-group">
+            <label for="reg-plan">Membership Plan</label>
+            <select id="reg-plan" required>
+              <option value="">Select Membership Plan</option>
+              <option value="monthly">Monthly Membership – Rs. 1,500</option>
+              <option value="monthly-coach">Monthly + Coach Membership – Rs. 5,000</option>
+              <option value="6-months">6-Month Membership – Rs. 8,500</option>
+              <option value="annual">Annual Membership – Rs. 17,500</option>
+            </select>
+            <p class="form-error" id="reg-plan-error">Please select a membership plan.</p>
+          </div>
+          <button type="submit" class="submit-btn">Submit Registration</button>
+          <div class="form-general-error" id="reg-error-msg"
+            style="display: none; color: #e74c3c; background: rgba(231,76,60,0.1); border: 1px solid #e74c3c; border-radius: 8px; padding: 12px; margin-top: 15px; text-align: center; font-size: 0.9rem; font-weight: 500;">
+            ❌ Failed to submit registration. Please try again.
+          </div>
+        </form>
+        <div class="form-success" id="form-success">
+          <div class="success-icon">✅</div>
+          <h3>Registration Successful!</h3>
+          <p>Thank you for registering! Our team will contact you shortly to finalize your membership.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us — we're always happy to help.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-list fade-in-left">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p><a href="https://maps.app.goo.gl/6B2BG4QuP2yY8EUHA?g_st=ac" target="_blank"
+                  style="color: inherit; text-decoration: none; cursor: pointer;">Sameer Hassanzai Fitness Gym, Block 9
+                  Sector 9 Hawkes Bay Town, Karachi</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="https://wa.me/923152419624" target="_blank"
+                  style="color: inherit; text-decoration: none;">0315-2419624</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aamirhassanzai@gmail.com" target="_blank"
+                  rel="noopener noreferrer" style="color: inherit; text-decoration: none;">aamirhassanzai@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <h4>Working Hours</h4>
+              <p>Men: 6:30 AM – 9:00 AM | 5:30 PM – 1:00 AM<br />Women: 11:00 AM – 3:00 PM<br />Sunday: CLOSED</p>
+            </div>
+          </div>
+        </div>
+        <div class="map-container fade-in-right">
+          <iframe
+            src="https://maps.google.com/maps?q=Sameer%20Hassanzai%20Fitness%20Gym%2C%20Block%209%20Sector%209%20Hawkes%20Bay%20Town%2C%20Karachi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="100%" style="border:0; min-height:350px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">Sameer Hassan <span>Zai Gym</span></span>
+          <p>Karachi's premier fitness destination. Transforming lives through discipline, dedication, and world-class
+            training since day one.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="YouTube">🎬</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#facilities">Facilities</a>
+          <a href="#trainers">Trainers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#register">Register</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#trainers">Personal Training</a>
+          <a href="#female-gym">Female Gym</a>
+          <a href="#bmi">BMI Calculator</a>
+          <a href="#our-champions">Champions</a>
+          <a href="#timings">Timings</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+923152419624">0315-2419624</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aamirhassanzai@gmail.com" target="_blank"
+            rel="noopener noreferrer">aamirhassanzai@gmail.com</a>
+          <a href="#contact">Find Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 <span>Sameer Hassan Zai Gym</span>. All Rights Reserved.</p>
+        <p style="margin-top: 10px; font-size: 0.8rem; opacity: 0.85;">
+          Designed & Developed by <a href="https://github.com/AmirAbbasi4923" target="_blank" rel="noopener noreferrer"
+            style="color: var(--clr-accent); text-decoration: none; font-weight: 600; transition: color 0.3s ease;"
+            onmouseover="this.style.color='var(--clr-white)'" onmouseout="this.style.color='var(--clr-accent)'">Amir
+            Abbasi</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== WHATSAPP POPUP MODAL ==================== -->
+  <div class="wa-popup-overlay" id="wa-popup-overlay"></div>
+  <div class="wa-popup" id="wa-popup">
+    <button class="wa-popup-close" id="wa-popup-close">&times;</button>
+    <div class="wa-popup-header">
+      <svg width="28" height="28" viewBox="0 0 32 32" fill="#25d366">
+        <path
+          d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.052 9.38L1.056 31.2l6.072-1.94A15.91 15.91 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.312 22.594c-.39 1.1-1.932 2.012-3.168 2.278-.848.18-1.956.324-5.684-1.222-4.772-1.976-7.836-6.82-8.074-7.138-.228-.318-1.918-2.554-1.918-4.872s1.214-3.456 1.644-3.928c.39-.428.852-.536 1.136-.536.284 0 .568.002.816.014.262.012.614-.1.96.732.356.852 1.21 2.942 1.316 3.156.108.214.18.464.036.748-.142.284-.214.462-.428.712-.214.25-.45.558-.642.748-.214.214-.436.446-.188.876s1.104 1.82 2.37 2.95c1.63 1.452 3.004 1.904 3.432 2.118.428.214.678.178.926-.108.25-.284 1.07-1.248 1.356-1.676.284-.428.568-.356.96-.214.39.142 2.478 1.168 2.906 1.382.428.214.712.322.818.498.108.178.108 1.024-.282 2.124z" />
+      </svg>
+      <h3>Chat with Us on WhatsApp</h3>
+    </div>
+    <p class="wa-popup-desc">Fill in your details and we'll receive your message directly!</p>
+    <form id="wa-form" class="wa-popup-form">
+      <div class="wa-form-group">
+        <label for="wa-name">Your Name</label>
+        <input type="text" id="wa-name" placeholder="Enter your full name" required />
+      </div>
+      <div class="wa-form-group">
+        <label for="wa-phone">Phone Number</label>
+        <input type="tel" id="wa-phone" placeholder="e.g. 03152419624" maxlength="11" minlength="11" pattern="\d{11}"
+          required />
+      </div>
+      <div class="wa-form-group">
+        <label for="wa-training">Training Type</label>
+        <select id="wa-training" required>
+          <option value="">Select Training Type</option>
+          <option value="Training Only">Training Only</option>
+          <option value="Training + Coach">Training + Coach</option>
+        </select>
+      </div>
+      <button type="submit" class="wa-send-btn">Send via WhatsApp →</button>
+    </form>
+  </div>
+
+  <!-- ==================== WHATSAPP BUTTON ==================== -->
+  <button class="whatsapp-btn" id="whatsapp-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.132 6.744 3.052 9.38L1.056 31.2l6.072-1.94A15.91 15.91 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.312 22.594c-.39 1.1-1.932 2.012-3.168 2.278-.848.18-1.956.324-5.684-1.222-4.772-1.976-7.836-6.82-8.074-7.138-.228-.318-1.918-2.554-1.918-4.872s1.214-3.456 1.644-3.928c.39-.428.852-.536 1.136-.536.284 0 .568.002.816.014.262.012.614-.1.96.732.356.852 1.21 2.942 1.316 3.156.108.214.18.464.036.748-.142.284-.214.462-.428.712-.214.25-.45.558-.642.748-.214.214-.436.446-.188.876s1.104 1.82 2.37 2.95c1.63 1.452 3.004 1.904 3.432 2.118.428.214.678.178.926-.108.25-.284 1.07-1.248 1.356-1.676.284-.428.568-.356.96-.214.39.142 2.478 1.168 2.906 1.382.428.214.712.322.818.498.108.178.108 1.024-.282 2.124z" />
+    </svg>
+  </button>
+
+  <!-- ==================== BACK TO TOP ==================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

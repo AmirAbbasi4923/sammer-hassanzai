@@ -797,7 +797,7 @@ section {
 
 .about-value-icon {
   font-size: 22px;
-  color: #ffd700;
+  color: var(--clr-gold) !important;
   margin-right: 10px;
   flex-shrink: 0;
   line-height: 1;
@@ -931,7 +931,7 @@ section {
 
 .female-feature-icon {
   font-size: 22px;
-  color: #ffd700;
+  color: var(--clr-gold) !important;
   margin-right: 10px;
   flex-shrink: 0;
   line-height: 1;

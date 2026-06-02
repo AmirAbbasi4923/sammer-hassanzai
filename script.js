@@ -10,20 +10,37 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================
   const loadingScreen = document.getElementById('loading-screen');
   
+  function finishLoading() {
+    loadingScreen.classList.add('hidden');
+    document.body.classList.remove('is-loading');
+  }
+
   window.addEventListener('load', () => {
-    setTimeout(() => {
-      loadingScreen.classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    }, 1800);
+    setTimeout(finishLoading, 1800);
   });
 
   // Fallback: hide loader after 3s even if load event fires early
   setTimeout(() => {
     if (!loadingScreen.classList.contains('hidden')) {
-      loadingScreen.classList.add('hidden');
-      document.body.style.overflow = 'auto';
+      finishLoading();
     }
   }, 3000);
+
+  // Reset horizontal drift after pinch-zoom (common when page had overflow)
+  function clampHorizontalScroll() {
+    if (window.scrollX !== 0) {
+      window.scrollTo(0, window.scrollY);
+    }
+  }
+
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', clampHorizontalScroll);
+    window.visualViewport.addEventListener('scroll', clampHorizontalScroll);
+  }
+
+  window.addEventListener('orientationchange', () => {
+    setTimeout(clampHorizontalScroll, 150);
+  });
 
   // ==========================================
   // 2. SCROLL PROGRESS BAR

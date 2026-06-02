@@ -158,6 +158,9 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
   font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -165,8 +168,14 @@ body {
   background: var(--clr-bg);
   color: var(--clr-text);
   line-height: 1.7;
-  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
+}
+
+body.is-loading {
+  overflow: hidden;
 }
 
 a {
@@ -265,6 +274,11 @@ button, input, select, textarea {
 }
 
 /* ---------- Section Defaults ---------- */
+section {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 .section {
   padding: var(--section-padding);
   position: relative;
@@ -366,12 +380,15 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 0;
+  gap: 12px;
 }
 
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .nav-logo {
@@ -381,10 +398,19 @@ button, input, select, textarea {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--clr-white);
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .nav-logo span {
   color: var(--clr-accent);
+}
+
+.nav-logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--clr-white);
+  line-height: 1.2;
 }
 
 .nav-links {
@@ -497,6 +523,9 @@ button, input, select, textarea {
 /* ---------- HERO SECTION ---------- */
 .hero {
   min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2150,22 +2179,39 @@ button, input, select, textarea {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 80%;
+    right: 0;
+    width: min(80%, 320px);
     max-width: 320px;
     height: 100vh;
+    height: 100dvh;
     background: rgba(10,10,10,0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: center;
     gap: 24px;
     padding: 40px;
-    transition: right var(--transition);
+    z-index: 9998;
+    transform: translateX(100%);
+    transition: transform var(--transition);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .nav-links.open {
-    right: 0;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .fade-in-left,
+  .fade-in-right {
+    transform: translateY(30px);
+  }
+
+  .fade-in-left.visible,
+  .fade-in-right.visible {
+    transform: translateY(0);
   }
 
   .nav-links a {
@@ -2213,6 +2259,19 @@ button, input, select, textarea {
 }
 
 @media (max-width: 480px) {
+  .nav-logo {
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+  }
+
+  .nav-logo-text {
+    font-size: 0.85rem;
+  }
+
+  .nav-logo img {
+    height: 40px !important;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -2304,7 +2363,7 @@ button, input, select, textarea {
   bottom: 100px;
   right: 30px;
   width: 360px;
-  max-width: calc(100vw - 40px);
+  max-width: min(360px, calc(100% - 40px));
   background: var(--clr-surface);
   border: 1px solid var(--clr-border);
   border-radius: 20px;
@@ -2434,7 +2493,8 @@ button, input, select, textarea {
   .wa-popup {
     bottom: 80px;
     right: 10px;
-    width: calc(100vw - 20px);
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
     padding: 20px;
   }
 }

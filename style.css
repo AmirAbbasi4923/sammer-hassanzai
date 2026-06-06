@@ -2228,6 +2228,10 @@ section {
     display: flex;
   }
 
+  .about-image--video {
+    min-height: 250px;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;

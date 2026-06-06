@@ -723,13 +723,15 @@ section {
   height: 100%;
   min-height: 100%;
   background: #000;
+  overflow: hidden;
 }
 
 .about-video iframe {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  top: -60px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 120px);
   border: 0;
 }
 
@@ -2226,10 +2228,6 @@ section {
 
   .hamburger {
     display: flex;
-  }
-
-  .about-image--video {
-    min-height: 250px;
   }
 
   .stats-grid {
